@@ -1,0 +1,12 @@
+// Layout variables partial
+
+@import "colors";
+
+$section-padding: 120px 0;
+
+section.intro, section.features-extra, section.sign-up {
+	background: $section-light;
+}
+section.features, section.blog-intro, section.blog {
+	background: $section-dark;
+}
