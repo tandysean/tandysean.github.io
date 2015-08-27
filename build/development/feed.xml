@@ -3,10 +3,10 @@
   <channel>
     <title>Sean Arnold</title>
     <description></description>
-    <link>tandysean.github.io/build/development/</link>
-    <atom:link href="tandysean.github.io/build/development/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 26 Aug 2015 21:10:06 -0400</pubDate>
-    <lastBuildDate>Wed, 26 Aug 2015 21:10:06 -0400</lastBuildDate>
+    <link>tandysean.github.io/build/development//</link>
+    <atom:link href="tandysean.github.io/build/development//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 26 Aug 2015 21:11:33 -0400</pubDate>
+    <lastBuildDate>Wed, 26 Aug 2015 21:11:33 -0400</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -23,8 +23,8 @@ I want to sleep  forever!&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 18 Mar 2016 07:17:21 -0400</pubDate>
-        <link>tandysean.github.io/build/development/sad/mutherfucka/2016/03/18/i-want-to-die.html</link>
-        <guid isPermaLink="true">tandysean.github.io/build/development/sad/mutherfucka/2016/03/18/i-want-to-die.html</guid>
+        <link>tandysean.github.io/build/development//sad/mutherfucka/2016/03/18/i-want-to-die.html</link>
+        <guid isPermaLink="true">tandysean.github.io/build/development//sad/mutherfucka/2016/03/18/i-want-to-die.html</guid>
         
         
         <category>sad</category>
@@ -51,8 +51,8 @@ I want to sleep  forever!&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 21 Oct 2014 07:17:21 -0400</pubDate>
-        <link>tandysean.github.io/build/development/jekyll/update/2014/10/21/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">tandysean.github.io/build/development/jekyll/update/2014/10/21/welcome-to-jekyll.html</guid>
+        <link>tandysean.github.io/build/development//jekyll/update/2014/10/21/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">tandysean.github.io/build/development//jekyll/update/2014/10/21/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
