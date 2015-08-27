@@ -3,8 +3,8 @@ title: Sean Arnold
 tagline: Front End Developer
 email: tandysean@gmail.com
 description: > # this means to ignore newlines until "baseurl:"Í
-baseurl: "/build/development/" # the subpath of your site, e.g. /blog/
-url: "tandysean.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:9999" # the base hostname & protocol for your site
 twitter_username: tandysean
 github_username:  tandysean
 
