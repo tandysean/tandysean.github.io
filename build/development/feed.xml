@@ -3,10 +3,10 @@
   <channel>
     <title>Sean Arnold</title>
     <description></description>
-    <link>http://tandysean.github.io/build/development/</link>
-    <atom:link href="http://tandysean.github.io/build/development/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 26 Aug 2015 21:42:23 -0400</pubDate>
-    <lastBuildDate>Wed, 26 Aug 2015 21:42:23 -0400</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 26 Aug 2015 22:19:19 -0400</pubDate>
+    <lastBuildDate>Wed, 26 Aug 2015 22:19:19 -0400</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -23,8 +23,8 @@ I want to sleep  forever!&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 18 Mar 2016 07:17:21 -0400</pubDate>
-        <link>http://tandysean.github.io/build/development/sad/mutherfucka/2016/03/18/i-want-to-die.html</link>
-        <guid isPermaLink="true">http://tandysean.github.io/build/development/sad/mutherfucka/2016/03/18/i-want-to-die.html</guid>
+        <link>/sad/mutherfucka/2016/03/18/i-want-to-die.html</link>
+        <guid isPermaLink="true">/sad/mutherfucka/2016/03/18/i-want-to-die.html</guid>
         
         
         <category>sad</category>
@@ -51,8 +51,8 @@ I want to sleep  forever!&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 21 Oct 2014 07:17:21 -0400</pubDate>
-        <link>http://tandysean.github.io/build/development/jekyll/update/2014/10/21/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://tandysean.github.io/build/development/jekyll/update/2014/10/21/welcome-to-jekyll.html</guid>
+        <link>/jekyll/update/2014/10/21/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/10/21/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
