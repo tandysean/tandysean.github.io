@@ -3,9 +3,9 @@ app
 .DS_Store
 
 Gemfile
-#.gitignore
+.gitignore
 #Gemfile.lock
-#README.markdown
+README.markdown
 #bower.json
 #build/development/index2.html
 docs/
@@ -16,5 +16,5 @@ node_modules/
 npm-debug.log
 #package.json
 vectors/
-#app/
+app/
 
