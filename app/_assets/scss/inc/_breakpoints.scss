@@ -1,14 +1,25 @@
 // Breakpoints
 
-@mixin upToLargeBreakpoint {
-  @media screen and (max-width:1200px) {
+@mixin largeBreakpoint {
+  @media all and (max-width:1200px) {
     @content;
   }
 }
 
-@mixin upToMediumBreakpoint {
-  @media screen and (max-width:991px) {
+@mixin mediumBreakpoint {
+  @media all and (min-width: 621px) and (max-width: 991px) {
     @content;
   }
 }
 
+@mixin smallBreakpoint {
+  @media all and (max-width: 620px){
+    @content;
+  }
+}
+
+@mixin smallAndMediumBreakpoint {
+  @media all and (max-width: 991px){
+    @content;
+  }
+}

@@ -110,11 +110,15 @@ module.exports = {
                 outputName: 'bootstrap.js'
             },
             {
+                entries: './' + srcAssets + '/javascripts/lib/retina.js',
+                dest: developmentAssets + '/js',
+                outputName: 'retina.js'
+            },
+            {
                 entries: './' + srcAssets + '/javascripts/scripts.js',
                 dest: developmentAssets + '/js',
                 outputName: 'scripts.js'
             }
-
         ]
     },
     images: {

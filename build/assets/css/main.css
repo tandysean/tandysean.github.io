@@ -1,37 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+h1 {
+  font-size: 6.0rem; }
+  @media all and (max-width: 620px) {
+    h1 {
+      font-size: 3.0rem; } }
+
 /* ==========================================================================
 Typography
-========================================================================== */
-p {
-  font-size: 15px;
-  line-height: 29px;
-  color: rgba(28, 54, 83, 0.6);
-  padding-bottom: 20px; }
-
-h1 {
-  font-size: 60px; }
-
-h2 {
-  font-size: 40px;
-  font-weight: 300;
-  color: #3D4351; }
-
-h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #3D4351; }
-
-h4 {
-  font-size: 18px; }
-
-h5 {
-  font-size: 15px;
-  color: #3D4351;
-  text-transform: uppercase;
-  font-weight: 500; }
-
+// ========================================================================== */
 .btn {
   font-size: 13px;
   border: solid 2px;
@@ -84,6 +62,12 @@ section.features, section.blog-intro, section.blog {
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.4rem; }
+
 .group:after {
   content: "";
   display: table;
@@ -122,7 +106,10 @@ ul li {
   list-style: none; }
 
 .section-padding {
-  padding: 120px 0; }
+  padding: 120px; }
+  @media all and (max-width: 620px) {
+    .section-padding {
+      padding: 60px; } }
 
 .tooltip {
   position: absolute;
@@ -340,7 +327,7 @@ Navigation
   visibility: hidden;
   -webkit-transition: all 300ms ease-in-out;
           transition: all 300ms ease-in-out; }
-  @media screen and (max-width: 991px) {
+  @media all and (max-width: 991px) {
     .navicon {
       visibility: visible; } }
 
@@ -352,6 +339,9 @@ Hero
   background: url("../images/hero1-bw.jpg") center center;
   background-size: cover;
   position: relative; }
+  @media all and (max-width: 620px) {
+    .hero {
+      min-height: 200px; } }
   .hero .down-arrow a {
     color: #fff; }
   .hero h1 {
@@ -363,17 +353,26 @@ Hero
       white-space: nowrap; }
   .hero p.intro {
     color: #fff;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: 300;
     margin-bottom: 80px; }
+    @media all and (max-width: 620px) {
+      .hero p.intro {
+        margin-bottom: 40px;
+        font-size: 1.6rem; }
+        .hero p.intro .btn-large {
+          margin-bottom: 40px; } }
   .hero .hero-content {
     padding-top: 26%; }
-    @media screen and (max-width: 1200px) {
+    @media all and (max-width: 1200px) {
       .hero .hero-content {
         padding-top: 28%; } }
-    @media screen and (max-width: 991px) {
+    @media all and (min-width: 621px) and (max-width: 991px) {
       .hero .hero-content {
         padding-top: 32%; } }
+    @media all and (max-width: 620px) {
+      .hero .hero-content {
+        padding-bottom: 20%; } }
 
 .navigation {
   -webkit-transition: all 300ms ease-in-out;
@@ -388,7 +387,9 @@ Hero
     z-index: 999;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    border-bottom: none; }
+    border-bottom: none;
+    top: 0;
+    left: 0; }
 
 header {
   padding: 30px 0;
@@ -397,18 +398,16 @@ header {
   margin: 0 auto;
   -webkit-transition: padding 300ms ease-in-out;
           transition: padding 300ms ease-in-out; }
-  @media screen and (max-width: 1200px) {
+  @media all and (max-width: 1200px) {
     header {
       width: 90%;
       margin: 0 auto; } }
-  @media screen and (max-width: 991px) {
+  @media all and (max-width: 991px) {
     header {
-      width: 90%;
-      padding-left: 25px; } }
+      width: 90%; } }
   header a {
     color: #fff;
-    text-transform: uppercase;
-    font-size: 13px; }
+    text-transform: uppercase; }
     header a.login {
       margin-right: 20px; }
   header .logo {
@@ -424,16 +423,21 @@ header {
       color: #b5b6b9; }
   header ul.primary-nav {
     margin: 0 0 0 75px;
-    padding: 0; }
+    padding: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: relative;
+    top: 50%; }
     header ul.primary-nav li {
       display: inline; }
-      @media screen and (max-width: 991px) {
+      @media all and (max-width: 991px) {
         header ul.primary-nav li {
           display: block; } }
       header ul.primary-nav li a {
         color: #fff;
         padding-right: 25px; }
-        @media screen and (max-width: 991px) {
+        @media all and (max-width: 991px) {
           header ul.primary-nav li a {
             font-size: 25px;
             -webkit-transition: all 300ms ease-in-out;
@@ -450,7 +454,9 @@ header {
         color: #FF5274; }
   header .header-nav {
     display: inline-block; }
-    @media screen and (max-width: 991px) {
+    header .header-nav nav {
+      height: 100%; }
+    @media all and (max-width: 991px) {
       header .header-nav {
         position: fixed;
         background-color: #000;
@@ -469,7 +475,7 @@ header {
     top: 41px;
     -webkit-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out; }
-    @media screen and (max-width: 991px) {
+    @media all and (max-width: 991px) {
       header .member-actions {
         position: static; } }
 
@@ -501,7 +507,7 @@ Intro
 .intro-content {
   display: inline-block;
   width: 80%; }
-  @media screen and (max-width: 1200px) {
+  @media all and (max-width: 1200px) {
     .intro-content {
       display: inline-block;
       width: 70%; } }
@@ -551,6 +557,9 @@ Features-stack
     height: 1002px;
     background: url("../images/ipad-device.png") no-repeat center center;
     z-index: 1; }
+    @media all and (max-width: 991px) {
+      .features .ipad-wrap {
+        display: none; } }
   .features .iphone-wrap {
     width: 304px;
     height: 620px;
@@ -559,6 +568,9 @@ Features-stack
     left: 530px;
     bottom: 129px;
     z-index: 2; }
+    @media all and (max-width: 991px) {
+      .features .iphone-wrap {
+        display: none; } }
   .features .device-showcase {
     position: absolute;
     bottom: -365px;
@@ -586,6 +598,9 @@ Features-stack
     top: 114px;
     z-index: 4;
     left: 50%; }
+    @media all and (max-width: 991px) {
+      .features-extra .macbook-wrap {
+        display: none; } }
 
 /* ==========================================================================
 .hero-strip
@@ -644,7 +659,6 @@ Features-stack
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out; }
   .blog h2 {
-    font-size: 11px;
     color: #ACB1B4;
     font-weight: 500;
     text-transform: uppercase;
@@ -709,7 +723,6 @@ Features-stack
       height: auto; }
   .testimonial-slider h2 {
     color: #fff;
-    font-size: 40px;
     font-weight: 300;
     font-style: italic;
     margin: 30px 0; }
@@ -812,8 +825,7 @@ footer {
   background-color: #3D4351;
   position: relative; }
   footer p {
-    color: #ACB1B4;
-    font-size: 13px; }
+    color: #ACB1B4; }
   footer a {
     color: #fff; }
   footer a:hover {
@@ -822,10 +834,12 @@ footer {
     border-top: solid 1px #4E566C;
     padding-top: 25px;
     margin-bottom: 45px; }
+    @media all and (max-width: 991px) {
+      footer ul.footer-group {
+        display: none; } }
   footer ul.footer-group li {
     display: inline-block; }
   footer ul.footer-group li a {
-    font-size: 13px;
     text-transform: uppercase; }
   footer ul.footer-group li a:hover {
     color: #FF5274; }
@@ -838,17 +852,23 @@ footer {
     font-size: 15px;
     margin: 0 2px; }
   footer .social-share {
-    position: absolute;
+    float: right;
     background-color: #373D4A;
     right: 0;
     width: 40%;
     height: 100%;
-    padding: 40px 0 0 40px; }
-    @media screen and (max-width: 991px) {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 50px; }
+    @media all and (max-width: 991px) {
       footer .social-share {
+        position: relative;
         display: block;
         width: 100%;
-        text-align: center; } }
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
     footer .social-share .phone {
       color: #fff;
       font-size: 3rem;
@@ -864,8 +884,6 @@ footer {
         color: #FF5274; }
     footer .social-share a {
       margin-top: 5px; }
-  footer .footer-links {
-    margin: 136px 0 120px 0; }
 
 /* ==========================================================================
 Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)

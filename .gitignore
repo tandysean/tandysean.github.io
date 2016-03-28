@@ -8,7 +8,6 @@ Gemfile
 Gemfile.lock
 README.markdown
 bower.json
-build/
 docs/
 fontcustom.yml
 gulp/
@@ -21,4 +20,3 @@ app/
 README.markdown
 _config.build.yml
 _config.yml
-

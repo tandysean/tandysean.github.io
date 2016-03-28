@@ -13,6 +13,16 @@
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+
+
 .group:after {
   content: "";
   display: table;
@@ -52,7 +62,11 @@ ul li {
   list-style: none;
 }
 .section-padding {
-  padding: $section-padding;
+  padding: 120px;
+
+  @include smallBreakpoint {
+    padding: 60px;
+  }
 }
 .tooltip {
   position: absolute;
@@ -238,8 +252,9 @@ Navigation
   visibility: hidden;
   transition: all 300ms ease-in-out;
 
-  @include upToMediumBreakpoint {
+  @include smallAndMediumBreakpoint {
     visibility: visible;
+
   }
 }
 
@@ -251,6 +266,10 @@ Hero
   background: url('../images/hero1-bw.jpg') center center;
   background-size: cover;
   position: relative;
+
+  @include smallBreakpoint {
+    min-height: 200px;
+  }
 
   .down-arrow a {
     color: $txt-light;
@@ -267,19 +286,32 @@ Hero
   }
   p.intro {
     color: $txt-light;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: 300;
     margin-bottom: 80px;
+
+    @include smallBreakpoint {
+      margin-bottom: 40px;
+      font-size: 1.6rem;
+
+      .btn-large {
+        margin-bottom: 40px;
+      }
+    }
   }
   .hero-content {
     padding-top: 26%;
 
-    @include upToLargeBreakpoint {
+    @include largeBreakpoint {
       padding-top: 28%;
     }
 
-    @include upToMediumBreakpoint {
+    @include mediumBreakpoint {
       padding-top: 32%;
+    }
+
+    @include smallBreakpoint {
+      padding-bottom: 20%;
     }
   }
 }
@@ -297,6 +329,8 @@ Hero
     width: 100%;
     background-color: rgba(0, 0, 0, .85);
     border-bottom: none;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -307,20 +341,18 @@ header {
   margin: 0 auto;
   transition: padding 300ms ease-in-out;
 
-  @include upToLargeBreakpoint {
+  @include largeBreakpoint {
     width: 90%;
     margin: 0 auto;
   }
 
-  @include upToMediumBreakpoint {
+  @include smallAndMediumBreakpoint {
     width: 90%;
-    padding-left: 25px;
   }
 
   a {
     color: $txt-light;
     text-transform: uppercase;
-    font-size: $nav-font-size;
 
     &.login {
       margin-right: 20px;
@@ -355,11 +387,14 @@ header {
   ul.primary-nav {
     margin: 0 0 0 75px;
     padding: 0;
+    transform: translateY(-50%);
+    position:relative;
+    top: 50%;
 
     li {
       display: inline;
 
-      @include upToMediumBreakpoint {
+      @include smallAndMediumBreakpoint {
         display: block;
       }
 
@@ -367,7 +402,7 @@ header {
         color: $txt-light;
         padding-right: 25px;
 
-        @include upToMediumBreakpoint {
+        @include smallAndMediumBreakpoint {
           font-size: 25px;
           -moz-transition: all 300ms ease-in-out;
           -o-transition: all 300ms ease-in-out;
@@ -400,7 +435,11 @@ header {
   .header-nav {
     display: inline-block;
 
-    @include upToMediumBreakpoint {
+    nav {
+      height: 100%;
+    }
+
+    @include smallAndMediumBreakpoint {
       position: fixed;
       background-color: #000;
       width: 100%;
@@ -413,6 +452,7 @@ header {
       -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
       transition: opacity 0.5s, visibility 0s 0.5s;
     }
+
   }
   .member-actions {
     position: absolute;
@@ -420,7 +460,7 @@ header {
     top: 41px;
     transition: all 300ms ease-in-out;
 
-    @include upToMediumBreakpoint {
+    @include smallAndMediumBreakpoint {
       position: static;
     }
   }
@@ -453,7 +493,7 @@ Intro
   display: inline-block;
   width: 80%;
 
-  @include upToLargeBreakpoint {
+  @include largeBreakpoint {
     display: inline-block;
     width: 70%;
   }
@@ -515,6 +555,10 @@ Features-stack
     height: 1002px;
     background: url("../images/ipad-device.png") no-repeat center center;
     z-index: 1;
+
+    @include smallAndMediumBreakpoint {
+      display: none;
+    }
   }
   .iphone-wrap {
     width: 304px;
@@ -524,6 +568,10 @@ Features-stack
     left: 530px;
     bottom: 129px;
     z-index: 2;
+
+    @include smallAndMediumBreakpoint {
+      display: none;
+    }
   }
   .device-showcase {
     position: absolute;
@@ -556,6 +604,10 @@ Features-stack
     top: 114px;
     z-index: 4;
     left: 50%;
+
+    @include smallAndMediumBreakpoint {
+      display: none;
+    }
   }
 }
 
@@ -630,7 +682,6 @@ Features-stack
     transition: all 300ms ease-in-out;
   }
   h2 {
-    font-size: $blog-post-title;
     color: $txt-accent;
     font-weight: $semibold;
     text-transform: uppercase;
@@ -718,7 +769,6 @@ Features-stack
   }
   h2 {
     color: $txt-light;
-    font-size: $font-size-h2;
     font-weight: $light;
     font-style: italic;
     margin: 30px 0;
@@ -844,7 +894,6 @@ footer {
 
   p {
     color: $txt-accent;
-    font-size: $nav-font-size;
   }
   a {
     color: $txt-light;
@@ -856,12 +905,15 @@ footer {
     border-top: solid 1px #4E566C;
     padding-top: 25px;
     margin-bottom: 45px;
+
+    @include smallAndMediumBreakpoint {
+      display:none;
+    }
   }
   ul.footer-group li {
     display: inline-block;
   }
   ul.footer-group li a {
-    font-size: $nav-font-size;
     text-transform: uppercase;
   }
   ul.footer-group li a:hover {
@@ -879,17 +931,23 @@ footer {
     margin: 0 2px;
   }
   .social-share {
-    position: absolute;
+    float: right;
     background-color: #373D4A;
     right: 0;
     width: 40%;
     height: 100%;
-    padding: 40px 0 0 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 50px;
 
-    @include upToMediumBreakpoint {
+    @include smallAndMediumBreakpoint {
+      position:relative;
       display: block;
       width: 100%;
       text-align: center;
+      padding: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     .phone {
@@ -918,7 +976,8 @@ footer {
     }
   }
   .footer-links {
-    margin: 136px 0 120px 0;
+    //margin: 136px 0 120px 0;
+
   }
 }
 
